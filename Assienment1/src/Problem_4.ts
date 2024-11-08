@@ -14,22 +14,25 @@
     type x = Circle | Rectangle;
 
     //fun
-    const calculateShapeArea = (shape: x) => {
+    const calculateShapeArea = (shape: x)=> {
        if(shape.shape === "circle"){
-         return Math.PI * shape.radius * shape.radius;
+        const result1=Math.PI * shape.radius * shape.radius;
+         return result1;
        }
        if(shape.shape === "rectangle"){
-          return shape.width * shape.height;
+         const result2=shape.width * shape.height;
+          return result2;
+          
        }
     }
-    const circleArea  = calculateShapeArea({ shape: "circle", radius: 5 });
-    const rectangleArea = calculateShapeArea({
-        shape: "rectangle",
-        width: 4,
-        height: 6,
-    });
-    console.log(circleArea)
-    console.log(rectangleArea)
+    // const circleArea  = calculateShapeArea({ shape: "circle", radius: 5 });
+    // const rectangleArea = calculateShapeArea({
+    //     shape: "rectangle",
+    //     width: 4,
+    //     height: 6,
+    // }); 
+    // console.log(circleArea)
+    // console.log(rectangleArea)
 
     //
 }
